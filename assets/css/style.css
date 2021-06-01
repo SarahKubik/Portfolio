@@ -1,7 +1,7 @@
-
-*{
+* {
   box-sizing: border-box;
 }
+
 body{
   margin:0;
   padding:0;
@@ -9,6 +9,7 @@ body{
   color: #588b8b;
   background-color: #f0ead2;
   line-height: 1.5;
+
 }
 
 h{
@@ -16,6 +17,7 @@ h{
 }
 p {
   margin:0;
+  font-size: xx-large;
 }
 
 header{
@@ -50,8 +52,12 @@ nav a{
   padding: 5px 10px;
   font-size: 2.1rem;
   
- 
-  
+}
+
+
+main {
+  margin-top: 20px;
+  margin-bottom: 45px;
 }
 
 hero-banner{
@@ -59,16 +65,13 @@ hero-banner{
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
-  min-height: 30vh;
+  min-height: 5vh;
   color: #f7fff7;
-  padding: 2% 6%;
+  padding: 6% 10%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   text-align:right;
-}
-.hero-banner div{
-  flex: 0 0 50%;
 }
 
 .hero-banner h2{
@@ -76,29 +79,36 @@ hero-banner{
   background-color:#f7fff7;
   margin: 0;
   padding: 5 px 10px;
-  font-size: 1.5 rem;
-  line-height:1.2;
-  display:inline-flexbox;
+  font-size: 2.0rem;
+  line-height:1.3;
   text-align-last: center;
 
 }
 .page-wrapper {
-  max-width: 90%;
+  max-width: 88%;
   margin-left: auto;
   margin-right: auto;
 }
 .page-section {
-  margin: 100px 0;
-  padding: 100px 0;
+  margin: 25px 0;
+  padding: 10px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: space-between;
 }
+.page-section > div {
+  flex: 0 0 77%;
+}
+
+.page-section p {
+  margin-bottom: 20px;
+}
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
 }
 .flex-item {
@@ -106,14 +116,15 @@ hero-banner{
   background-color:#89b0ae;
   color: #4A6B86ff;
   flex-direction: row;
+  flex-basis: auto;
+  display:flex;
   padding: 5px;
-  margin: 5.0em;
-  transition: all 0.5s;
+  margin: 5em;
   font-size: 2.0rem;
 }
 .flex-item:first-child {
   flex-direction: row-reverse;
-  min-height: 240px;
+  min-height: 20px;
   flex-basis: auto;
 }
 .flex-item:hover {
@@ -132,22 +143,22 @@ hero-banner{
 }
 .contact address a {
   color: #4A6B86ff;
-  padding: 5px;
-  text-decoration: none;
-  font-size: 1.3rem;
+  padding: 15px;
+  font-size: 2.5rem;
   font-style: normal;
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: bottom;
   transition: all 0.25s ease-in;
   margin: 0 0.2rem 0.1rem;
-  display: inline-block;
+  display: inline-flex;
 }
 .contact address a:hover {
   background-size: 100% 88%;
   color:#4a4e69;
 }
 .recycledetroit{
+  flex-direction: row;
   background-image: url(".\assets\images\RecycleDetroit.jpg");
 }
 
@@ -171,16 +182,35 @@ hero-banner{
 
   .page-section > h2,
   .page-section > div {
-    flex: 0 0 75%;
+    flex: 0 0 100%;
   }
 
   .page-section > h2 {
     border-right: none;
-    border-bottom: 4px solid #f5cac3;
+    border-bottom: 8px solid #f5cac3;
     margin-bottom: 20px;
     padding-bottom: 10px;
     text-align: left;
     font-size: 3vw;
   }
+  @media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
 
- 
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact address {
+    flex-direction:row;
+    align-items: flex-start;
+    
+  }
+}
