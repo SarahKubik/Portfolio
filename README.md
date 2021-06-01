@@ -1,8 +1,8 @@
 # Heading 1
 
-As a new developer, I am creating a portfolio to illustrate my work and skills.
+As a new developer, I am creating a faux portfolio to illustrate work and skills.
 
-My portfolio consists of basic use of coding languages, HTML and CSS.
+The faux portfolio consists of basic use of coding languages, HTML and CSS.
 
 Header topics link to different sections of the webpage for easy navigation.
 
