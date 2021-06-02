@@ -2,7 +2,7 @@
 # HOMEWORK #2: PORTFOLIO
 
 <https://sarahkubik.github.io/SKK-Portfolio/>
-=
+
 <https://github.com/SarahKubik/SKK-Portfolio.git>
 
 NOTES
